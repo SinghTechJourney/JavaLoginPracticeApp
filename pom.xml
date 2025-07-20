@@ -14,7 +14,19 @@
     </properties>
 
     <dependencies>
-        <!-- Add dependencies if needed -->
+        <!-- Actuator for exposing endpoints -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>2.7.18</version>
+        </dependency>
+
+        <!-- Micrometer Prometheus registry -->
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+            <version>1.10.5</version>
+        </dependency>
     </dependencies>
 
     <build>
